@@ -6,7 +6,9 @@ export function notFoundError(req, res, next) {
 }
 
 export function errorHandler(error, req, res, next) {
+    console.log("hello");
     res.status(error.status || 500).json({
         message: error.message,
     });
+    next()
 }

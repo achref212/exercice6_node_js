@@ -4,13 +4,13 @@ const userSchema = Schema(
     {
         userName: {
             type: String,
-            required: true
+
         },
         password: {
-            type: String, required: true
+            type: String
         },
         wallet: {
-            type: Number, required: true
+            type: Number
         }
 
 

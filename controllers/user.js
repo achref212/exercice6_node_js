@@ -7,9 +7,7 @@ export function inscription(req, res, next) {
             password: newUser.password,
             wallet: newUser.wallet
         }))
-
         .catch((err) => res.status(500).json({ errorMessage: err }));
-    next()
 }
 
 export function inscriptionssss(req, res) {
